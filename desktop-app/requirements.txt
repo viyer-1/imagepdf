@@ -1,0 +1,19 @@
+# Core runtime dependencies
+PyQt6==6.10.2
+pillow==11.3.0
+reportlab==4.4.7
+PyMuPDF==1.26.7
+QtAwesome==1.4.0
+Flask==3.1.2
+
+# Testing dependencies
+pytest==9.0.2
+pytest-qt==4.5.0
+pytest-cov==7.0.0
+
+# Development tools
+ruff==0.9.3
+
+# Note: PyInstaller is intentionally NOT included here
+# It's a build-time dependency installed separately in GitHub Actions workflows
+# For local testing, run the app directly with: python src/main.py

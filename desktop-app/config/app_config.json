@@ -1,0 +1,44 @@
+{
+  "_comment": "Application display settings and branding - Single source of truth for all build scripts",
+
+  "branding": {
+    "app_name": "Image ↔ PDF Converter",
+    "app_name_short": "Image-PDF",
+    "app_name_executable": "Image-PDF-Converter",
+    "app_name_no_special_chars": "Image-PDF-Converter",
+    "company_name": "Image-PDF Open Source",
+    "company_website": "https://github.com/viyer-1/imagepdf",
+    "support_email": "github-issues@imagepdf.oss",
+    "bundle_identifier": "org.imagepdf.converter",
+    "copyright": "Copyright © 2026 Image-PDF Open Source Project. Released under MIT License."
+  },
+
+  "version": {
+    "major": 1,
+    "minor": 1,
+    "patch": 0,
+    "full": "1.1.0-oss"
+  },
+
+  "build": {
+    "windows_installer_guid": "{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}",
+    "windows_upgrade_code": "{B2C3D4E5-F6A7-8901-BCDE-FA2345678901}",
+    "macos_min_version": "10.13.0",
+    "build_year": 2026
+  },
+
+  "window": {
+    "start_maximized": true,
+    "min_width": 1000,
+    "min_height": 700
+  },
+
+  "ui": {
+    "thumbnail_size": 150,
+    "thumbnail_quality": 85,
+    "thumbnail_columns": 5,
+    "thumbnail_spacing": 8,
+    "control_pane_width": 350,
+    "control_pane_position": "right"
+  }
+}

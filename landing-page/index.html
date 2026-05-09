@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image ↔ PDF Converter — Open Source. Private. Secure.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ── NAVIGATION ── -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <div class="brand-icon">
+                    <i class="fas fa-shield-halved"></i>
+                </div>
+                <span class="brand-name">Image <span class="brand-arrow">↔</span> PDF</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#privacy">Privacy</a></li>
+                <li><a href="#download" class="btn btn-primary nav-cta"><i class="fas fa-download"></i> Download</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ── HERO ── -->
+    <section class="hero">
+        <div class="hero-bg-pattern"></div>
+        <div class="container">
+            <div class="hero-layout">
+
+                <!-- Left: copy -->
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="fas fa-code-branch"></i>
+                        Free & Open Source Edition
+                    </div>
+                    <h1 class="hero-title">
+                        Convert Files.<br>
+                        <span class="accent">Stay Private.</span><br>
+                        Always.
+                    </h1>
+                    <p class="hero-subtitle">
+                        Your documents never leave your machine. No uploads,
+                        no tracking, no accounts — just fast, private conversion
+                        on every platform. Now fully open-source.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#download" class="btn btn-primary btn-large">
+                            <i class="fas fa-download"></i>
+                            Download Now
+                        </a>
+                        <a href="https://github.com/viyer-1/imagepdf" class="btn btn-ghost btn-large">
+                            <i class="fab fa-github"></i>
+                            View on GitHub
+                        </a>
+                    </div>
+                    <div class="hero-platforms">
+                        <span class="platform-badge"><i class="fab fa-windows"></i> Windows 10/11</span>
+                        <span class="platform-badge"><i class="fab fa-apple"></i> macOS 10.14+</span>
+                        <span class="platform-badge"><i class="fab fa-linux"></i> Linux</span>
+                    </div>
+                </div>
+
+                <!-- Right: diagram -->
+                <div class="hero-visual">
+                    <div class="visual-wrap">
+                        <div class="no-cloud">
+                            <i class="fas fa-cloud"></i>
+                            <span class="slash">No upload</span>
+                        </div>
+                        <div class="flow-diagram">
+                            <!-- Input images -->
+                            <div class="flow-col">
+                                <div class="flow-file img" style="--d:0s">
+                                    <i class="fas fa-image"></i><span class="mono">.jpg</span>
+                                </div>
+                                <div class="flow-file img" style="--d:.15s">
+                                    <i class="fas fa-image"></i><span class="mono">.png</span>
+                                </div>
+                                <div class="flow-file img" style="--d:.3s">
+                                    <i class="fas fa-image"></i><span class="mono">.tiff</span>
+                                </div>
+                            </div>
+                            <!-- Arrow in -->
+                            <div class="flow-track">
+                                <div class="flow-particle" style="--p:0"></div>
+                                <div class="flow-particle" style="--p:1"></div>
+                                <div class="flow-particle" style="--p:2"></div>
+                            </div>
+                            <!-- Machine -->
+                            <div class="flow-machine">
+                                <div class="machine-glow"></div>
+                                <i class="fas fa-laptop-code"></i>
+                                <span class="mono">Local<span class="blink">_</span></span>
+                            </div>
+                            <!-- Arrow out -->
+                            <div class="flow-track">
+                                <div class="flow-particle" style="--p:0"></div>
+                                <div class="flow-particle" style="--p:1"></div>
+                            </div>
+                            <!-- Output PDF -->
+                            <div class="flow-col">
+                                <div class="flow-file pdf">
+                                    <i class="fas fa-file-pdf"></i><span class="mono">.pdf</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ── STATS BAR ── -->
+    <div class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal">
+                    <span class="stat-number mono">0</span>
+                    <span class="stat-label">Files uploaded to servers</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item reveal" style="transition-delay:.1s">
+                    <span class="stat-number mono accent">100%</span>
+                    <span class="stat-label">Local processing</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item reveal" style="transition-delay:.2s">
+                    <span class="stat-number mono">0</span>
+                    <span class="stat-label">Tracking events</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item reveal" style="transition-delay:.3s">
+                    <span class="stat-number mono">6</span>
+                    <span class="stat-label">Supported formats</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── PRIVACY PROMISE ── -->
+    <section id="privacy" class="privacy-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Privacy First</div>
+                <h2>Your Documents Stay Yours</h2>
+                <p class="section-sub">
+                    Built for people who handle sensitive files — lawyers, clinicians, journalists, researchers.
+                    All processing is local, always. Open source for transparency.
+                </p>
+            </div>
+            <div class="privacy-grid">
+                <div class="privacy-card reveal">
+                    <div class="card-icon green">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>No Server Uploads</h3>
+                    <p>Your files never touch our servers. Medical scans, legal contracts, classified docs — all processed entirely on your machine, with no network traffic.</p>
+                </div>
+                <div class="privacy-card reveal" style="transition-delay:.08s">
+                    <div class="card-icon green">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>EXIF Data Stripped Automatically</h3>
+                    <p>Every conversion removes GPS coordinates, device fingerprints, timestamps, and camera metadata. Clean output, every time, without asking.</p>
+                </div>
+                <div class="privacy-card reveal" style="transition-delay:.16s">
+                    <div class="card-icon green">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Fully Offline</h3>
+                    <p>No internet connection required. Use it on air-gapped machines, in secure facilities, or at 35,000 feet. Your workflow, your rules.</p>
+                </div>
+                <div class="privacy-card reveal" style="transition-delay:.24s">
+                    <div class="card-icon green">
+                        <i class="fas fa-eye-slash"></i>
+                    </div>
+                    <h3>Zero Telemetry</h3>
+                    <p>No analytics, no crash reports, no usage logging. We don't know what you convert — and we deliberately built it that way.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── FEATURES ── -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2>Powerful. Private. Fully Unlocked.</h2>
+            <div class="features-grid-large">
+                <div class="feature-item reveal">
+                    <div class="feature-icon-wrap">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <div class="feature-body">
+                        <h3>Bidirectional Conversion</h3>
+                        <p>Images → PDF or PDF → Images. Switch directions instantly in the same clean interface.</p>
+                    </div>
+                </div>
+                <div class="feature-item reveal" style="transition-delay:.06s">
+                    <div class="feature-icon-wrap">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <div class="feature-body">
+                        <h3>6 Image Formats</h3>
+                        <p>JPG, PNG, TIFF, BMP, WebP — mix formats freely in a single PDF output.</p>
+                    </div>
+                </div>
+                <div class="feature-item reveal" style="transition-delay:.12s">
+                    <div class="feature-icon-wrap">
+                        <i class="fas fa-grip-vertical"></i>
+                    </div>
+                    <div class="feature-body">
+                        <h3>Drag-and-Drop Reordering</h3>
+                        <p>Visual thumbnail grid. Drag to reorder. What you see is exactly what you get.</p>
+                    </div>
+                </div>
+                <div class="feature-item reveal" style="transition-delay:.18s">
+                    <div class="feature-icon-wrap">
+                        <i class="fas fa-scissors"></i>
+                    </div>
+                    <div class="feature-body">
+                        <h3>Selective Page Extraction</h3>
+                        <p>Extract specific pages or ranges (e.g., 1, 3, 5–8) from any PDF. Precise control with simple notation.</p>
+                    </div>
+                </div>
+                <div class="feature-item reveal" style="transition-delay:.24s">
+                    <div class="feature-icon-wrap">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                    <div class="feature-body">
+                        <h3>Custom Page Sizes</h3>
+                        <p>A4, Letter, Legal, or set custom dimensions in millimetres. Professional layout control.</p>
+                    </div>
+                </div>
+                <div class="feature-item reveal" style="transition-delay:.30s">
+                    <div class="feature-icon-wrap">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <div class="feature-body">
+                        <h3>Local REST API</h3>
+                        <p>Automate conversions via localhost API. Integrate with your workflows, scripts, or pipelines locally.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── DOWNLOAD ── -->
+    <section id="download" class="download-section">
+        <div class="container">
+            <div class="section-tag">Download</div>
+            <h2>Download & Start Converting.<br><span class="accent">Free & Open Source. No Accounts.</span></h2>
+            <p class="section-sub" style="max-width:540px;margin:16px auto 0;">
+                Native desktop app for every major platform. All features unlocked for everyone.
+            </p>
+
+            <div class="download-grid">
+                <a href="#" class="download-card reveal">
+                    <div class="download-os-icon"><i class="fab fa-windows"></i></div>
+                    <div class="download-info">
+                        <span class="download-name">Windows 10 / 11</span>
+                        <span class="download-desc">.exe installer &middot; x64</span>
+                    </div>
+                    <i class="fas fa-download download-arrow"></i>
+                </a>
+                <a href="#" class="download-card reveal" style="transition-delay:.06s">
+                    <div class="download-os-icon"><i class="fab fa-apple"></i></div>
+                    <div class="download-info">
+                        <span class="download-name">macOS 10.14+</span>
+                        <span class="download-desc">.dmg &middot; Universal Binary</span>
+                    </div>
+                    <i class="fas fa-download download-arrow"></i>
+                </a>
+                <a href="#" class="download-card reveal" style="transition-delay:.12s">
+                    <div class="download-os-icon"><i class="fab fa-linux"></i></div>
+                    <div class="download-info">
+                        <span class="download-name">Linux x86_64</span>
+                        <span class="download-desc">.AppImage</span>
+                    </div>
+                    <i class="fas fa-download download-arrow"></i>
+                </a>
+                <a href="#" class="download-card reveal" style="transition-delay:.18s">
+                    <div class="download-os-icon"><i class="fas fa-microchip"></i></div>
+                    <div class="download-info">
+                        <span class="download-name">Linux ARM / Raspberry Pi</span>
+                        <span class="download-desc">.tar.gz &middot; aarch64</span>
+                    </div>
+                    <i class="fas fa-download download-arrow"></i>
+                </a>
+            </div>
+
+            <p class="download-note">
+                <i class="fas fa-code-branch"></i> MIT Licensed &nbsp;&middot;&nbsp;
+                <i class="fas fa-lock"></i> 100% local processing &nbsp;&middot;&nbsp;
+                <i class="fas fa-wifi"></i> Works fully offline
+            </p>
+        </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="nav-brand">
+                        <div class="brand-icon small">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+                        <span class="brand-name">Image <span class="brand-arrow">↔</span> PDF</span>
+                    </div>
+                    <p class="footer-tagline">
+                        Open-source, privacy-first file conversion.<br>
+                        Your files never leave your computer.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#privacy">Privacy</a></li>
+                            <li><a href="#download">Download</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Community</h4>
+                        <ul>
+                            <li><a href="https://github.com/viyer-1/imagepdf">GitHub</a></li>
+                            <li><a href="https://github.com/viyer-1/imagepdf/issues">Issues</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Image-PDF Open Source Project. Released under MIT License.</p>
+                <p class="footer-privacy-note"><i class="fas fa-shield-halved"></i> 100% Local & Private.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ── Navbar scroll effect ──
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 40);
+        }, { passive: true });
+
+        // ── Mobile nav toggle ──
+        const navToggle = document.getElementById('navToggle');
+        const navMenu   = document.getElementById('navMenu');
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+            navToggle.classList.toggle('open');
+        });
+        navMenu.querySelectorAll('a').forEach(a => {
+            a.addEventListener('click', () => {
+                navMenu.classList.remove('open');
+                navToggle.classList.remove('open');
+            });
+        });
+
+        // ── Scroll-reveal (IntersectionObserver) ──
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+        document.querySelectorAll('.reveal, .stat-item').forEach(el => revealObserver.observe(el));
+
+    </script>
+</body>
+</html>
