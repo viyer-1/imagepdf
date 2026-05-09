@@ -1,6 +1,6 @@
-# Image ↔ PDF Converter (Open Source Edition)
+# Image ↔ PDF Converter
 
-A professional, privacy-focused desktop application for bidirectional conversion between images and PDF documents. All conversions happen locally on your machine—your files never leave your computer.
+A professional, privacy-focused desktop application for bidirectional conversion between images and PDF documents. All conversions happen locally on your machine. Your files never leave your computer.
 
 ![App Screenshot](desktop-app/screenshots/main_window_with_files.png)
 
